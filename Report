@@ -1,0 +1,20 @@
+Incident Title: Windows Process Monitoring on Local Workstation
+Severity: Low
+Date/Time Observed: 11/28/2025 | 11:33am EST
+Analyst: Kelvin Tejada
+
+Summary:
+A Routine process and service review was conducted on the local workstation. All running processes and services were observed using Task Manager and PowerShell. No unusual activity was detected, which includes high resource usage and suspicious process names, during the session.
+
+Assessment:
+No indicators of malicious activity were detected. All processes were consistent with normal Windows system and user activity. CPU and memory usage were within expected ranges, and no anomalies or duplicates were observed. 
+
+Containment/Action Taken:
+- Reviewed running processes in Task Manager
+- Verified top 10 resource consuming processes with PowerShell (Get-Process)
+- Check all running services using PowerShell (Get-Service)
+
+Recommendation:
+-Continue routine monitoring
+-Educate users on safe software practices
+-Schedule periodic reviews to establish a baseline
